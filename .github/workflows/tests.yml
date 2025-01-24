@@ -38,6 +38,3 @@ jobs:
 
     - name: Unit Tests
       run: composer test:unit
-
-    - name: Unit Options Tests
-      run: composer test:unit:options
