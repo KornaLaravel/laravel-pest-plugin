@@ -59,9 +59,11 @@
         "lint": "pint",
         "test:lint": "pint --test",
         "test:unit": "pest --colors=always --exclude-group=options",
+        "test:unit:options": "pest --colors=always --group=options --without-exception-handling --without-deprecation-handling",
         "test": [
             "@test:lint",
             "@test:unit",
+            "@test:unit:options"
         ]
     }
 }
